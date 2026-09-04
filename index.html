@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Train yourself against social engineering attacks with interactive cybersecurity simulations">
+  <title>Social Engineering Simulator</title>
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <!-- Decorative stars removed for a single-color background -->
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <img src="./images/Blue_Modern_Security_Technology_Logo.png" alt="Logo" class="logo-img">
+      <span data-i18n="nav.simulator">Social Engineering Simulator</span>
+    </div>
+    
+    <ul class="nav-links">
+      <li><a href="./index.html" class="active" data-i18n="nav.home">Home</a></li>
+      <li><a href="#alerts" data-i18n="nav.alerts">Alerts</a></li>
+      <li><a href="#alerts" data-i18n="nav.about">About Us</a></li>
+      <li><a href="./pages/simulation.html" class="btn btn-sm btn-cta" data-i18n="home.start">Start Simulation</a></li>
+    </ul>
+    
+    <div class="nav-controls">
+      <button class="toggle-btn" id="langToggle" title="Toggle Language">🌐</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero home-hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 data-i18n="home.title">Train Yourself Against Social Engineering Attacks</h1>
+        <p data-i18n="home.subtitle">Experience interactive cybersecurity simulations designed to protect you from phishing, scams, and manipulation attacks.</p>
+        <div class="hero-actions">
+          <a id="startSimulationBtn" href="./pages/simulation.html" class="btn btn-primary btn-lg" data-i18n="home.start">Start Simulation</a>
+        </div>
+      </div>
+      <div class="leaderboard-card card">
+        <div class="card-header">
+          <div class="icon-circle primary">🏆</div>
+          <div>
+            <h4 data-i18n="nav.leaderboard">Leaderboard</h4>
+            <p class="muted-text" data-i18n="alerts.topScores">Top awareness scores</p>
+          </div>
+        </div>
+        <div class="leaderboard-item">
+          <div class="item-left">
+            <div class="item-number">1</div>
+            <div class="item-details">
+              <div class="item-name">Sara</div>
+              <div class="item-meta">High</div>
+            </div>
+          </div>
+          <div class="item-score"><span class="score-value">9</span><span class="score-unit">/10</span></div>
+        </div>
+        <div class="leaderboard-item">
+          <div class="item-left">
+            <div class="item-number">2</div>
+            <div class="item-details">
+              <div class="item-name">Ahmad</div>
+              <div class="item-meta">High</div>
+            </div>
+          </div>
+          <div class="item-score"><span class="score-value">8</span><span class="score-unit">/10</span></div>
+        </div>
+        <div class="leaderboard-item">
+          <div class="item-left">
+            <div class="item-number">3</div>
+            <div class="item-details">
+              <div class="item-name">Layla</div>
+              <div class="item-meta">High</div>
+            </div>
+          </div>
+          <div class="item-score"><span class="score-value">8</span><span class="score-unit">/10</span></div>
+        </div>
+        <div class="leaderboard-item">
+          <div class="item-left">
+            <div class="item-number">4</div>
+            <div class="item-details">
+              <div class="item-name">Khaled</div>
+              <div class="item-meta">Medium</div>
+            </div>
+          </div>
+          <div class="item-score"><span class="score-value">7</span><span class="score-unit">/10</span></div>
+        </div>
+        <div class="leaderboard-item">
+          <div class="item-left">
+            <div class="item-number">5</div>
+            <div class="item-details">
+              <div class="item-name">Mona</div>
+              <div class="item-meta">Medium</div>
+            </div>
+          </div>
+          <div class="item-score"><span class="score-value">7</span><span class="score-unit">/10</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alerts Section -->
+  <section id="alerts" class="container py-3xl alerts-section">
+    <div class="alerts-header text-center mb-2xl">
+      <h2 style="color: var(--text-dark);" data-i18n="alerts.title">Latest Scam Alerts</h2>
+      <p style="color: var(--muted-foreground);" data-i18n="alerts.subtitle">Stay informed about the newest threats</p>
+    </div>
+
+    <div class="alerts-frame">
+      <div class="grid grid-3">
+        <div class="card text-left alert-card alert-pink">
+          <h4 data-i18n="alerts.phishing">Fake Bank Verification Email</h4>
+          <p data-i18n="alerts.phishing.desc">Phishing emails claiming urgent account verification</p>
+        </div>
+
+        <div class="card text-left alert-card alert-orange">
+          <h4 data-i18n="alerts.sms">Fake Delivery SMS</h4>
+          <p data-i18n="alerts.sms.desc">Scammers impersonating delivery services</p>
+        </div>
+
+        <div class="card text-left alert-card alert-blue">
+          <h4 data-i18n="alerts.instagram">Instagram Account Scam</h4>
+          <p data-i18n="alerts.instagram.desc">Fake messages threatening account deletion</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Paragraph -->
+  <section id="about" class="container py-3xl">
+    <h2 class="text-center mb-lg" data-i18n="about.title">About This Project</h2>
+    <p class="about-text" data-i18n="about.content">Social Engineering Simulator is an educational platform designed to help individuals recognize and defend against social engineering attacks through realistic simulations and interactive learning.</p>
+    <p class="about-madeby" data-i18n="about.madeBy">Developed by cybersecurity students passionate about making the digital world safer.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p data-i18n="about.copyright">© 2026 Social Engineering Simulator</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/language.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/app.js"></script>
+  
+</body>
+</html>
+
+
